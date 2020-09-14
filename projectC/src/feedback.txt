@@ -1,0 +1,1635 @@
+============================================
+vis/result.rtx
+22:45:35_Saturday_23_May_2020
+============================================
+Feedback:Your program ("Nimsys.java") is submitted successfully. :) 
+Your program is compiled successfully :) 
+The following are few simple tests and their results.
+However, it's your responsibility to test your program more extensively!
+Note that the program input (including carriage returns) is not displayed
+with the program output. The two streams are displayed separately.
+==================Test 1====================
+Test for input file: in1
+removeplayer
+y
+createplayer lskywalker,Skywalker,Luke
+addplayer lskywalker
+addplayer lskywalker,Skywalker,Luke
+addplayer lskywalker,Skywalker,Luke
+removeplayer
+y
+addplayer george,Washington,George
+addplayer jadams,Adams,John
+startgame 4,2,george,jadams
+4
+1
+1
+1
+1
+exit
+
+Expected results:                                                       Your results:
+Welcome to Nim								Welcome to Nim
+
+$Are you sure you want to remove all players? (y/n)			$Are you sure you want to remove all players? (y/n)
+
+$'createplayer' is not a valid command.					$'createplayer' is not a valid command.
+
+$Incorrect number of arguments supplied to command.			$Incorrect number of arguments supplied to command.
+
+$									$
+$The player already exists.						$The player already exists.
+
+$Are you sure you want to remove all players? (y/n)			$Are you sure you want to remove all players? (y/n)
+
+$									$
+$									$
+$									$
+Initial stone count: 4							Initial stone count: 4
+Maximum stone removal: 2						Maximum stone removal: 2
+Player 1: George Washington						Player 1: George Washington
+Player 2: John Adams							Player 2: John Adams
+
+4 stones left: * * * *							4 stones left: * * * *
+George's turn - remove how many?					George's turn - remove how many?
+
+Invalid move. You must remove between 1 and 2 stones.			Invalid move. You must remove between 1 and 2 stones.
+
+4 stones left: * * * *							4 stones left: * * * *
+George's turn - remove how many?					George's turn - remove how many?
+
+3 stones left: * * *							3 stones left: * * *
+John's turn - remove how many?						John's turn - remove how many?
+
+2 stones left: * *							2 stones left: * *
+George's turn - remove how many?					George's turn - remove how many?
+
+1 stones left: *							1 stones left: *
+John's turn - remove how many?						John's turn - remove how many?
+
+Game Over								Game Over
+George Washington wins!							George Washington wins!
+
+$									$
+
+Your results seem to be CORRECT.  :)
+==================Test 2====================
+Test for input file: in2
+displayplayer
+rankings
+exit
+
+Expected results:                                                       Your results:
+Welcome to Nim								Welcome to Nim
+
+$george,George,Washington,1 games,1 wins				$george,George,Washington,1 games,1 wins
+jadams,John,Adams,1 games,0 wins					jadams,John,Adams,1 games,0 wins
+
+$100% | 01 games | George Washington					$100% | 01 games | George Washington
+0%   | 01 games | John Adams						0%   | 01 games | John Adams
+
+$									$
+
+Your results seem to be CORRECT.  :)
+==================Test 3====================
+Test for input file: in3
+rankings
+removeplayer
+y
+createplayer ari,Ariana,Grande
+addplayer ari,Ariana,Grande
+addplayer tyty,tyler,swift
+rankings
+startgame 6,2,ari,tyty
+4
+2
+2
+2
+startgame 6,2,ari,tyty
+4
+2
+2
+2
+rankings
+exit
+
+Expected results:                                                       Your results:
+Welcome to Nim								Welcome to Nim
+
+$100% | 01 games | George Washington					$100% | 01 games | George Washington
+0%   | 01 games | John Adams						0%   | 01 games | John Adams
+
+$Are you sure you want to remove all players? (y/n)			$Are you sure you want to remove all players? (y/n)
+
+$'createplayer' is not a valid command.					$'createplayer' is not a valid command.
+
+$									$
+$									$
+$0%   | 00 games | Grande Ariana					$0%   | 00 games | Grande Ariana
+0%   | 00 games | swift tyler						0%   | 00 games | swift tyler
+
+$									$
+Initial stone count: 6							Initial stone count: 6
+Maximum stone removal: 2						Maximum stone removal: 2
+Player 1: Grande Ariana							Player 1: Grande Ariana
+Player 2: swift tyler							Player 2: swift tyler
+
+6 stones left: * * * * * *						6 stones left: * * * * * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+Invalid move. You must remove between 1 and 2 stones.			Invalid move. You must remove between 1 and 2 stones.
+
+6 stones left: * * * * * *						6 stones left: * * * * * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+4 stones left: * * * *							4 stones left: * * * *
+swift's turn - remove how many?						swift's turn - remove how many?
+
+2 stones left: * *							2 stones left: * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+Game Over								Game Over
+swift tyler wins!							swift tyler wins!
+
+$									$
+Initial stone count: 6							Initial stone count: 6
+Maximum stone removal: 2						Maximum stone removal: 2
+Player 1: Grande Ariana							Player 1: Grande Ariana
+Player 2: swift tyler							Player 2: swift tyler
+
+6 stones left: * * * * * *						6 stones left: * * * * * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+Invalid move. You must remove between 1 and 2 stones.			Invalid move. You must remove between 1 and 2 stones.
+
+6 stones left: * * * * * *						6 stones left: * * * * * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+4 stones left: * * * *							4 stones left: * * * *
+swift's turn - remove how many?						swift's turn - remove how many?
+
+2 stones left: * *							2 stones left: * *
+Grande's turn - remove how many?					Grande's turn - remove how many?
+
+Game Over								Game Over
+swift tyler wins!							swift tyler wins!
+
+$100% | 02 games | swift tyler						$100% | 02 games | swift tyler
+0%   | 02 games | Grande Ariana						0%   | 02 games | Grande Ariana
+
+$									$
+
+Your results seem to be CORRECT.  :)
+==============================================
+Start Bonus test
+====================BONUS1=====================
+This test is for the implmentation of the advanced Nim game.
+Test for input file: in_advanced1
+removeplayer
+y
+addplayer lskywalker,Skywalker,Luke
+addaiplayer artoo,D2,R2
+startgame 30,5,artoo,lskywalker
+1
+2
+3
+4
+1
+rankings
+exit
+
+Expected results:                                                       Your results:
+Welcome to Nim								Welcome to Nim
+
+$Are you sure you want to remove all players? (y/n)			$Are you sure you want to remove all players? (y/n)
+
+$									$
+$									$
+$									$
+Initial stone count: 30							Initial stone count: 30
+Maximum stone removal: 5						Maximum stone removal: 5
+Player 1: R2 D2								Player 1: R2 D2
+Player 2: Luke Skywalker						Player 2: Luke Skywalker
+
+30 stones left: * * * * * * * * * * * * * * * * * * * * * * * * * * 	30 stones left: * * * * * * * * * * * * * * * * * * * * * * * * * * 
+R2's turn - remove how many?						R2's turn - remove how many?
+
+25 stones left: * * * * * * * * * * * * * * * * * * * * * * * * *	25 stones left: * * * * * * * * * * * * * * * * * * * * * * * * *
+Luke's turn - remove how many?						Luke's turn - remove how many?
+
+24 stones left: * * * * * * * * * * * * * * * * * * * * * * * *		24 stones left: * * * * * * * * * * * * * * * * * * * * * * * *
+R2's turn - remove how many?						R2's turn - remove how many?
+
+19 stones left: * * * * * * * * * * * * * * * * * * *			19 stones left: * * * * * * * * * * * * * * * * * * *
+Luke's turn - remove how many?						Luke's turn - remove how many?
+
+17 stones left: * * * * * * * * * * * * * * * * *			17 stones left: * * * * * * * * * * * * * * * * *
+R2's turn - remove how many?						R2's turn - remove how many?
+
+13 stones left: * * * * * * * * * * * * *				13 stones left: * * * * * * * * * * * * *
+Luke's turn - remove how many?						Luke's turn - remove how many?
+
+10 stones left: * * * * * * * * * *					10 stones left: * * * * * * * * * *
+R2's turn - remove how many?						R2's turn - remove how many?
+
+7 stones left: * * * * * * *						7 stones left: * * * * * * *
+Luke's turn - remove how many?						Luke's turn - remove how many?
+
+3 stones left: * * *							3 stones left: * * *
+R2's turn - remove how many?						R2's turn - remove how many?
+
+1 stones left: *							1 stones left: *
+Luke's turn - remove how many?						Luke's turn - remove how many?
+
+Game Over								Game Over
+R2 D2 wins!								R2 D2 wins!
+
+$100% | 01 games | R2 D2						$100% | 01 games | R2 D2
+0%   | 01 games | Luke Skywalker					0%   | 01 games | Luke Skywalker
+
+$									$
+
+Your results seem to be CORRECT.  :)
+====================BONUS1=====================
+====================BONUS2=====================
+This test is for the implmentation of the advanced Nim game.
+Test for input file: in_advanced
+removeplayer
+y
+addplayer george,Washington,George
+addplayer jadams,Adams,John
+addplayer tom,Jefferson,Thomas
+addplayer jmadison,Madison,James
+startadvancedgame 5,george,jadams
+2 2
+4 1
+1 1
+5 1
+startadvancedgame 7,george,jadams
+4 1
+2 2
+6 2
+1 1
+5 1
+startadvancedgame 9,jadams,tom
+8 2
+4 1
+3 1
+5 1
+1 1
+6 1
+2 1
+7 1
+startadvancedgame 11,tom,jmadison
+2 2
+19 2
+10 2
+5 2
+8 2
+4 1
+1 1
+7 1
+rankings
+exit
+
+Expected results:                                                       Your results:
+Welcome to Nim								Welcome to Nim
+
+$Are you sure you want to remove all players? (y/n)			$Are you sure you want to remove all players? (y/n)
+
+$									$
+$									$
+$									$
+$									$
+$								     |	$'startadvancedgame' is not a valid command.
+Initial stone count: 5						     <
+Stones display: <1,*> <2,*> <3,*> <4,*> <5,*>			     <
+Player 1: George Washington					     <
+Player 2: John Adams						     <
+								     <
+5 stones left: <1,*> <2,*> <3,*> <4,*> <5,*>			     <
+George's turn - which to remove?				     <
+
+3 stones left: <1,*> <2,x> <3,x> <4,*> <5,*>			     |	$'2' is not a valid command.
+John's turn - which to remove?					     <
+
+2 stones left: <1,*> <2,x> <3,x> <4,x> <5,*>			     |	$'4' is not a valid command.
+George's turn - which to remove?				     <
+
+1 stones left: <1,x> <2,x> <3,x> <4,x> <5,*>			     |	$'1' is not a valid command.
+John's turn - which to remove?					     <
+
+Game Over							     |	$'5' is not a valid command.
+John Adams wins!						     <
+
+$								     |	$'startadvancedgame' is not a valid command.
+Initial stone count: 7						     <
+Stones display: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*>	     <
+Player 1: George Washington					     <
+Player 2: John Adams						     <
+
+7 stones left: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*>	     |	$'4' is not a valid command.
+George's turn - which to remove?				     <
+
+6 stones left: <1,*> <2,*> <3,*> <4,x> <5,*> <6,*> <7,*>	     |	$'2' is not a valid command.
+John's turn - which to remove?					     <
+
+4 stones left: <1,*> <2,x> <3,x> <4,x> <5,*> <6,*> <7,*>	     |	$'6' is not a valid command.
+George's turn - which to remove?				     <
+
+2 stones left: <1,*> <2,x> <3,x> <4,x> <5,*> <6,x> <7,x>	     |	$'1' is not a valid command.
+John's turn - which to remove?					     <
+
+1 stones left: <1,x> <2,x> <3,x> <4,x> <5,*> <6,x> <7,x>	     |	$'5' is not a valid command.
+George's turn - which to remove?				     <
+
+Game Over							     |	$'startadvancedgame' is not a valid command.
+George Washington wins!						     <
+								     <
+$								     <
+Initial stone count: 9						     <
+Stones display: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*> <8,*> <9,* <
+Player 1: John Adams						     <
+Player 2: Thomas Jefferson					     <
+
+9 stones left: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*> <8,*> <9,*> |	$'8' is not a valid command.
+John's turn - which to remove?					     <
+
+7 stones left: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*> <8,x> <9,x> |	$'4' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+6 stones left: <1,*> <2,*> <3,*> <4,x> <5,*> <6,*> <7,*> <8,x> <9,x> |	$'3' is not a valid command.
+John's turn - which to remove?					     <
+
+5 stones left: <1,*> <2,*> <3,x> <4,x> <5,*> <6,*> <7,*> <8,x> <9,x> |	$'5' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+4 stones left: <1,*> <2,*> <3,x> <4,x> <5,x> <6,*> <7,*> <8,x> <9,x> |	$'1' is not a valid command.
+John's turn - which to remove?					     <
+
+3 stones left: <1,x> <2,*> <3,x> <4,x> <5,x> <6,*> <7,*> <8,x> <9,x> |	$'6' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+2 stones left: <1,x> <2,*> <3,x> <4,x> <5,x> <6,x> <7,*> <8,x> <9,x> |	$'2' is not a valid command.
+John's turn - which to remove?					     <
+								     <
+1 stones left: <1,x> <2,x> <3,x> <4,x> <5,x> <6,x> <7,*> <8,x> <9,x> <
+Thomas's turn - which to remove?				     <
+								     <
+Game Over							     <
+Thomas Jefferson wins!						     <
+								     <
+$								     <
+Initial stone count: 11						     <
+Stones display: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*> <8,*> <9,* <
+Player 1: Thomas Jefferson					     <
+Player 2: James Madison						     <
+
+11 stones left: <1,*> <2,*> <3,*> <4,*> <5,*> <6,*> <7,*> <8,*> <9,* |	$'7' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+9 stones left: <1,*> <2,x> <3,x> <4,*> <5,*> <6,*> <7,*> <8,*> <9,*> |	$'startadvancedgame' is not a valid command.
+James's turn - which to remove?					     <
+
+Invalid move.							     |	$'2' is not a valid command.
+
+9 stones left: <1,*> <2,x> <3,x> <4,*> <5,*> <6,*> <7,*> <8,*> <9,*> |	$'19' is not a valid command.
+James's turn - which to remove?					     <
+
+7 stones left: <1,*> <2,x> <3,x> <4,*> <5,*> <6,*> <7,*> <8,*> <9,*> |	$'10' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+5 stones left: <1,*> <2,x> <3,x> <4,*> <5,x> <6,x> <7,*> <8,*> <9,*> |	$'5' is not a valid command.
+James's turn - which to remove?					     <
+
+3 stones left: <1,*> <2,x> <3,x> <4,*> <5,x> <6,x> <7,*> <8,x> <9,x> |	$'8' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+2 stones left: <1,*> <2,x> <3,x> <4,x> <5,x> <6,x> <7,*> <8,x> <9,x> |	$'4' is not a valid command.
+James's turn - which to remove?					     <
+
+1 stones left: <1,x> <2,x> <3,x> <4,x> <5,x> <6,x> <7,*> <8,x> <9,x> |	$'1' is not a valid command.
+Thomas's turn - which to remove?				     <
+
+Game Over							     |	$'7' is not a valid command.
+Thomas Jefferson wins!						     <
+
+$100% | 02 games | Thomas Jefferson				     |	$0%   | 00 games | George Washington
+50%  | 02 games | George Washington				     |	0%   | 00 games | John Adams
+33%  | 03 games | John Adams					     |	0%   | 00 games | James Madison
+0%   | 01 games | James Madison					     |	0%   | 00 games | Thomas Jefferson
+
+$									$
+
+Oops, your results seem to be INCORRECT.  :(
+====================BONUS2=====================
+Invalid move detected!
+Game state: [true, true, true, true, true, true]
+The last move by the rival player: 
+Your AI move: null is invalid
+Test is terminated
+This test is for the victory guaranteed strategy for the advanced Nim game
+Your solution is correct if it outputs 100 percent winning ratios in all cases
+============================================
+src/NimHumanPlayer.java
+22:45:28_Saturday_23_May_2020
+============================================
+
+/**
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public class NimHumanPlayer extends NimPlayer 
+{	
+	public NimHumanPlayer()
+	{
+		super();
+	
+	}
+	
+	public NimHumanPlayer(String userName, String firstName, String lastName, String playerType)
+	{
+		super(userName, firstName, lastName, playerType);
+	}
+
+	
+	public NimHumanPlayer(String userName, String firstName, String lastName, int gamesWon, int gamesPlayed)
+	{
+		super(userName, firstName, lastName, gamesWon, gamesPlayed);
+		
+	}
+	public NimHumanPlayer(String[] user) {
+		super(user);
+	}
+
+	public int moveStone(int upperBound, int stones) throws InvalidMove
+	{
+		
+		int stoneRemoved=0;
+	
+		try
+		{
+			stoneRemoved = Nimsys.keyboard.nextInt();
+			
+			
+			if (stoneRemoved > upperBound || stoneRemoved > stones || stoneRemoved ==0)
+			{
+				throw new InvalidMove("\nInvalid move. You must remove between 1 and");
+			}
+		
+		} catch (InvalidMove e)
+		
+		{
+			if(stoneRemoved>upperBound || stoneRemoved ==0)
+			{
+				stoneRemoved=0;
+				System.out.println(e.getMessage() +" "+upperBound+" stones.\n");
+			}
+			else if(stoneRemoved>stones || stoneRemoved ==0)
+			{
+				stoneRemoved=0;
+				System.out.println(e.getMessage() +" "+stones+ " stones.\n");
+			}
+		}
+	
+		return stoneRemoved;
+	}
+
+
+
+}
+
+============================================
+src/NimAIPlayer.java
+22:45:26_Saturday_23_May_2020
+============================================
+
+/**
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public class NimAIPlayer extends NimPlayer implements Testable
+{
+	
+	public NimAIPlayer()
+	{
+		super();
+	
+	}
+	
+	public NimAIPlayer(String userName, String firstName, String lastName, String playerType)
+	{
+		super(userName, firstName, lastName, playerType);
+	}
+	
+	public NimAIPlayer(String userName, String firstName, String lastName, int gamesWon, int gamesPlayed)
+	{
+		super(userName, firstName, lastName, gamesWon, gamesPlayed);
+	}
+	
+	public NimAIPlayer(String[] user) {
+		super(user);
+	}
+
+	// abstract method from parent class
+	public int moveStone(int upperBound, int stones) throws InvalidMove
+	{
+		int stoneRemoved;
+		
+		//finding the remainder 
+		int amountLeft = stones % (upperBound +1);
+		
+	
+		if(amountLeft != 1 && amountLeft!=0)
+		{
+			//To ensure the AI always wins
+			stoneRemoved = (amountLeft-1) %  (upperBound +1);
+		}
+		else
+		{
+			if(stones < upperBound)
+			{
+				stoneRemoved = Math.min(1, stones);
+			}
+			else
+			{
+				stoneRemoved = Math.min(stones,upperBound);
+			}
+		}
+		return stoneRemoved;
+	}
+	
+	public String advancedMove(boolean[] available, String lastMove)
+	{
+		return null;
+	}
+
+
+	
+}
+============================================
+src/NimPlayer.java
+22:45:28_Saturday_23_May_2020
+============================================
+
+/**
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public abstract class NimPlayer{
+	
+	//Initializing of variables
+	private String userName;
+	private String firstName;
+	private String lastName;
+	private String playerType;
+	
+	private int gamesWon;
+	private int gamesPlayed;
+	
+	//Default setter
+	public NimPlayer()
+	{
+		userName=null;
+		firstName=null; 
+		lastName=null;
+		gamesWon=0;
+		gamesPlayed=0; 
+		playerType = null;
+	}
+	
+	//Setter for NimPlayer
+	public NimPlayer(String userName, String firstName, String lastName, String playerType)
+	{
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gamesWon = 0;
+		this.gamesPlayed= 0;
+		this.playerType = playerType;
+	}
+	
+	public NimPlayer(String userName, String firstName, String lastName, int gamesWon, int gamesPlayed) 
+	{
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gamesWon = gamesWon;
+		this.gamesPlayed= gamesPlayed;
+		this.playerType = null;
+	}
+
+	
+	public NimPlayer(String [] user)
+	{
+		this.userName = user[0];
+		this.firstName = user[1];
+		this.lastName = user[2];
+		this.gamesWon = Integer.parseInt(user[3]);
+		this.gamesPlayed= Integer.parseInt(user[4]);
+		this.playerType = user[5];
+	}
+	
+	public void setPlayerType(String PlayerType)
+	{
+		this.playerType = PlayerType;
+	}
+	
+	public String getPlayerType()
+	{
+		return playerType;
+	}
+	
+	//Username setter
+	public void setUsername(String userName)
+	{
+		this.userName = userName;
+	}
+	
+	//First Name Setter
+	public void setFName(String firstName)
+	{
+		this.firstName = firstName;
+	}
+	
+	//Last Name Setter
+	public void setLName(String lastName)
+	{
+		this.lastName = lastName;
+	}
+	
+	//setter for games played
+	public void setGamesPlayed(int gamesPlayed)
+	{
+		this.gamesPlayed = gamesPlayed;
+	}
+	
+	//setter for games won
+	public void setGamesWon (int gamesWon)
+	{
+		this.gamesWon = gamesWon;
+	}
+		
+	//adding the number of games won for 1 player
+	public void addGamesWon() 
+	{
+		this.gamesWon += 1 ;
+		setGamesWon(this.gamesWon); 
+	}
+	
+	//adding the number of games played for 1 player
+	public void addGamesPlayed()
+	{
+		this.gamesPlayed += 1;
+		setGamesPlayed(this.gamesPlayed);
+	}
+	
+	//getter for first name
+	public String getFName()
+	{
+		return firstName;
+	}
+	
+	//getter for last name
+	public String getLName()
+	{
+		return lastName; 
+	}
+	
+	//getter for username
+	public String getUserName()
+	{
+		return userName;
+	}
+	
+	//getter for number of games won
+	public int getGamesWon()
+	{
+		return gamesWon;
+	}
+	
+	//getter for number of games played
+	public int getGamesPlayed()
+	{
+		return gamesPlayed;
+	}
+	
+	//method to calculate the winning percentage
+	public float calculatePercentage()
+	{
+		float percentage=0;
+		if (gamesPlayed!=0)
+		{	
+			percentage = ((float)gamesWon/(float)gamesPlayed)*100;
+		}
+		return percentage;
+	}
+	
+	//abstract method
+	public  abstract int moveStone(int UpperBound, int Stones) throws InvalidMove;
+	
+	@Override
+	public String toString()
+	{
+		return ""+userName+","+firstName+","+lastName+","+gamesWon+","+gamesPlayed+","+playerType+"\n";
+	}
+}
+
+============================================
+src/NimGame.java
+22:45:27_Saturday_23_May_2020
+============================================
+
+/**
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public class NimGame 
+{
+	//Initializing the variable
+	private int currentStone;
+	private int upperBound;
+	private int token =1;
+	private int stoneRemoved;
+	
+	private NimPlayer player1, player2;
+	
+	
+	private NimPlayer winner = null;
+	private NimPlayer loser = null; 
+	
+	//Default setter
+	public NimGame()
+	{
+		currentStone=0;
+		upperBound=0;
+		player1 = null;
+		player2 = null;
+		
+	}
+	
+	//Setter for NimGame
+	public NimGame(int currentStone, int upperBound, NimPlayer player1, NimPlayer player2)
+	{
+		this.currentStone = currentStone;
+		this.upperBound = upperBound;
+		this.player1 = player1;
+		this.player2 = player2; 
+	}
+	
+	//Setter for upperbound
+	public void setUpperBound(int upperBound)
+	{
+		this.upperBound = upperBound;
+	}
+	
+	//Getter for upperbound
+	public int getUpperBound()
+	{
+		return upperBound;
+	}
+	
+	//Setter for stones
+	public void setStone(int currentStone)
+	{
+		this.currentStone = currentStone;
+	}
+	
+	//Getter for stones
+	public int getStone()
+	{
+		return currentStone;
+	}
+	
+	//Setter for player1
+	public void setPlayer1(NimPlayer player1)
+	{
+		this.player1 = player1;
+	}
+	
+	//Setter for player2 
+	public void setPlayer2(NimPlayer player2)
+	{
+		this.player2 = player2; 
+	}
+	
+	//Getter for player1
+	public NimPlayer getPlayer1()
+	{
+		return player1;
+	}
+	
+	//Getter for player2
+	public NimPlayer getPlayer2()
+	{
+		return player2;
+	}
+	
+	//Method to create stone images
+	private String stoneImage(int stonesAmount) 
+	{
+		String stoneImage="*";
+		
+		 //repetition for the stoneImage
+		String repeat = new String(new char[stonesAmount]).replace("\0", stoneImage);
+		
+		//adding space between * and removing the space at the end 
+		repeat= repeat.replaceAll(".(?!$)", "$0 ");
+		return repeat;
+	}
+	
+	private void playerTurn(int stones, NimPlayer player)
+	{
+		System.out.println(stones+ " stones left: "+stoneImage(stones));
+		System.out.println(player.getFName()+"'s turn - remove how many?");
+	}
+	
+	//Method to remove stones
+	private int removeStone(int stoneRemovedAmt, int stonesAmt)
+	{
+		stonesAmt = stonesAmt - stoneRemovedAmt;
+		return stonesAmt;	
+	}
+	
+
+	//Method used to start the game 
+	public void startGame(int stones,  int upperBound, NimPlayer player1, NimPlayer player2) throws InvalidMove
+	{	
+		
+		NimGame game = new NimGame();
+		//Printing before game commences 
+		System.out.print("\n");
+		System.out.println("Initial stone count: "+stones);
+		System.out.println("Maximum stone removal: "+upperBound);
+		System.out.println("Player 1: "+player1.getFName() +" "+player1.getLName());
+		System.out.println("Player 2: "+player2.getFName() +" "+player2.getLName());
+		System.out.print("\n");
+		
+		//Repeat the while loop when Stones is not equal to 0
+		while(stones !=0)
+		{
+			switch(token) 
+			{
+				//Player 1 turn
+				case 1:
+					stoneRemoved=0;
+					while(stoneRemoved==0)
+					{
+						game.playerTurn(stones, player1);
+						stoneRemoved = player1.moveStone(upperBound, stones);
+					}
+	
+						System.out.print("\n");
+						//Deduct the number of stones
+						stones = removeStone(stoneRemoved, stones);
+						
+						if(stones == 0)
+						{
+							winner = player2;
+							loser = player1; 
+							
+						}
+						
+						token = token + 1;
+						break;
+
+			
+				//Player 2 turn
+				case 2:
+					stoneRemoved =0;
+					while(stoneRemoved==0)
+					{
+						game.playerTurn(stones, player2);
+						stoneRemoved = player2.moveStone(upperBound, stones);
+					}
+						System.out.print("\n");
+						//Deduct the stone count
+						stones = removeStone(stoneRemoved, stones);
+						
+						if(stones == 0)
+						{
+							winner = player1;
+							loser = player2;
+
+						}
+						
+						token = token - 1;
+						break;				
+			}
+		}
+		
+		//Printing the winner's name and adding their stats
+		System.out.println("Game Over");
+		System.out.println(winner.getFName()+" "+winner.getLName()+" wins!\n");
+		winner.addGamesPlayed();
+		winner.addGamesWon();
+		loser.addGamesPlayed();
+		
+	}
+}
+============================================
+src/Nimsys.java
+22:45:29_Saturday_23_May_2020
+============================================
+
+/**
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner; 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+
+
+public class Nimsys 
+{
+	 //Initializing a scanner
+	public static Scanner keyboard = new Scanner(System.in);
+	
+	static int KEYBOARD_SIZE =4;
+	
+	
+	public static void main(String args []) throws Exception
+	{ 
+		//Initializing the variable
+		
+		String [] keyboardInput = new String [KEYBOARD_SIZE];
+		String command,usernameInput,userFirstname, userLastname, sortInput;
+		String quit= "Y";
+		String input = "Correct";
+		String player1User, player2User;
+		
+		ArrayList <NimPlayer> user= new ArrayList<NimPlayer>();
+		NimPlayer player1;
+		NimPlayer player2;
+		
+		Nimsys obj = new Nimsys();
+		
+		int stoneInput;
+		int upperBoundInput;
+		
+		//Load file
+		obj.loadFile(user);
+		
+		//Welcome statement
+		System.out.println("Welcome to Nim\n");
+			
+		while (quit.contentEquals("Y"))
+		{
+			//Receive command
+			System.out.print("$");
+			command = keyboard.next();
+			
+			//Delimiting the input with commas
+			keyboardInput = keyboard.nextLine().split(",");
+			input = "correct";
+		
+			//Run the loop while the command is correct
+			while (input.equals("correct"))
+			{
+				try {
+					try
+					{
+						//Adding a new human player
+						if(command.equals("addplayer")) 
+						{	
+							usernameInput = keyboardInput[0].trim();
+							userLastname = keyboardInput[1];
+							userFirstname = keyboardInput[2];							
+								
+							//Create a new player object
+							obj.addNewPlayer(usernameInput, userFirstname, userLastname, user);
+							System.out.print("\n");
+							input = "incorrect";
+
+						}
+						
+						//Adding a new AI player
+						else if(command.equals("addaiplayer"))
+						{
+							usernameInput = keyboardInput[0].trim();
+							userLastname = keyboardInput[1];
+							userFirstname = keyboardInput[2];
+						
+							//Create new AI player
+							obj.addAIPlayer(usernameInput, userFirstname, userLastname, user);
+							System.out.print("\n");
+							input = "incorrect";
+						}
+							
+						//Edit an existing player
+						else if(command.equals("editplayer"))
+						{	
+							usernameInput = keyboardInput[0].trim();
+							userLastname = keyboardInput[1];
+							userFirstname = keyboardInput[2];
+							
+							obj.editPlayer(usernameInput, userFirstname, userLastname, user);
+							System.out.print("\n");
+							input = "incorrect";
+							break;	
+
+						}
+						
+						//Remove an existing player
+						else if(command.equals("removeplayer"))
+						{	
+							usernameInput = keyboardInput[0].trim();
+							
+							//Removing all existing player
+							if(usernameInput.isEmpty())
+							{
+								System.out.println("Are you sure you want to remove all players? (y/n)");
+								String removeAll = keyboard.nextLine();
+								if(removeAll.equalsIgnoreCase("Y"))
+								{
+									obj.removeAllPlayer(user);
+								}
+								System.out.print("\n");
+								input = "Incorrect";
+								break;
+							}
+							
+							else 
+							{
+								obj.removePlayer(usernameInput, user);
+								System.out.print("\n");
+								input = "Incorrect";
+								break;
+	
+							}
+								
+						}
+						
+						//Display an existing player
+						else if(command.equals("displayplayer"))
+						{
+							usernameInput = keyboardInput[0].trim();
+							
+							//Display all player
+							if(usernameInput.isEmpty())
+							{
+								obj.CompareDesc(user);;
+								obj.displayAllPlayer(user);
+								System.out.print("\n");
+								input = "Incorrect";
+								break; 
+							}
+							else
+							{
+								System.out.println(obj.displayPlayer(usernameInput,user));
+								System.out.print("\n");
+								input = "Incorrect";
+								break;
+							}
+						}
+						
+						//Reset stats of existing players
+						else if (command.equals("resetstats"))
+						{	
+							usernameInput = keyboardInput[0].trim();
+							
+							//Reset stats of all exisitng players
+							if(usernameInput.isEmpty())
+							{
+								System.out.println("Are you sure you want to reset all player statistics? (y/n)");
+								String reset = keyboard.nextLine();
+								
+								if(reset.equals("y"))
+								{
+									obj.resetAll(user);
+									System.out.print("\n");
+									input = "Incorrect";
+								}
+								break;
+							}
+							else 
+							{
+								obj.resetPlayer(usernameInput, user);
+								System.out.print("\n");
+								input = "Incorrect";
+								break;
+							}
+						}
+						
+						//Display rankings of the players
+						else if (command.contentEquals("rankings"))
+						{
+							sortInput = keyboardInput[0].trim();
+							
+							//sort the array of objects in descending manner
+							if(sortInput.equals("desc"))
+							{
+								obj.CompareDesc(user);
+							}
+							
+							//sort the array of objects in ascending manner
+							if(sortInput.equals("asc"))
+							{
+								obj.CompareAsc(user);
+							}
+		
+							//sort the array of objects in descending manner
+							if(sortInput.isEmpty())
+							{
+								obj.CompareDesc(user);
+							}
+							
+							obj.displayRank(user);
+							
+							System.out.print("\n");
+							input = "incorrect";
+							break;
+						}
+						
+						//Command to start the game
+						else if (command.contentEquals("startgame"))
+						{	
+							//Initializing the variables
+							stoneInput = Integer.parseInt(keyboardInput[0].trim());
+							upperBoundInput = Integer.parseInt(keyboardInput[1]);
+							player1User = keyboardInput[2];
+							player2User = keyboardInput[3];
+							
+							//Check if player exist and set as Player 1
+							player1 = obj.setGamePlayer(player1User, user);
+							
+							//Check if player exist and set as Player 2 
+							player2 = obj.setGamePlayer(player2User, user);
+							
+							if(player2 == null || player1==null)
+							{
+								System.out.println("One of the players does not exist.\n");
+								input = "incorrect";
+								break;
+							}
+							
+							//Create a new game
+							NimGame newGame = new NimGame(stoneInput, upperBoundInput,  player1, player2);
+							
+							//New game commences
+							newGame.startGame(stoneInput, upperBoundInput, player1, player2);
+							input = "incorrect";
+							
+						}
+						//Exit command
+						else if (command.contentEquals("exit"))
+						{
+							System.out.print("\n");
+							obj.writeFile(user);
+							System.exit(0);
+						}
+						else
+						{
+							//the command input is not valid
+							throw new InvalidCommand("'"+command+"' is not a valid command.\n");
+						}
+					}
+					// Number of argument not enough
+					catch(ArrayIndexOutOfBoundsException e)
+					{
+						 System.out.println( "Incorrect number of arguments supplied to command.\n" );
+						 break;
+					}
+				}
+				catch(InvalidCommand NotValidCommand)
+				{
+					System.out.println(NotValidCommand.getMessage());
+					input = "Incorrect";
+					break;
+				}
+			}
+		}
+	}
+
+	//method to load a file
+	private void loadFile(ArrayList<NimPlayer> userList)
+	{
+		try
+		{	
+			//assign a buffered reader variable
+			BufferedReader loadFile = null;
+			
+			//load a players.dat file
+			loadFile = new BufferedReader(new FileReader("players.dat"));
+			String read = loadFile.readLine();
+			
+			while(read!= null)
+			{
+				//read the text
+				String [] split = read.split(",");
+				
+				//add for human player
+				if(split[5].equalsIgnoreCase("HUMAN"))
+				{
+					userList.add(new NimHumanPlayer(split));
+					
+				}
+				
+				//add for ai player
+				else if(split[5].equalsIgnoreCase("AI"))
+				{
+					userList.add(new NimAIPlayer(split));
+				}
+				
+				read = loadFile.readLine();
+			}
+
+			loadFile.close();
+			
+		}
+		catch(Exception e)
+		{	
+			//Doesn't return anything since it will start the system
+			return;
+		}
+	}
+	
+	//method to write to save file
+	private void writeFile(ArrayList<NimPlayer> userList)
+	{
+		try 
+		{
+			BufferedWriter saveFile = null;
+			saveFile = new BufferedWriter(new FileWriter("players.dat"));
+			
+			//write for each file
+			for (NimPlayer i : userList)
+			{
+				saveFile.write(i.toString());
+			}
+			saveFile.close();
+		}
+		catch (Exception e)
+		{
+			System.out.println("an error occured");
+		}		
+	}
+
+	//Method to add a new AI player
+	private void addAIPlayer(String username, String firstName, String lastName, ArrayList<NimPlayer> list)
+	{
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, list, found);
+		if(found == true)
+		{
+			System.out.println("The player already exists");
+		}
+		else 
+		{
+			list.add(new NimAIPlayer(username, firstName, lastName, "AI"));
+		}
+	}
+
+	//Method to add a new player
+	private void addNewPlayer(String username, String firstName, String lastName, ArrayList<NimPlayer> list )
+	{
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, list, found);
+		if(found == true)
+		{
+			System.out.println("The player already exists.");
+		}
+		else 
+		{
+			list.add(new NimHumanPlayer(username, firstName,lastName,"Human"));
+		}
+	}
+	
+	//Method to check if player exist
+	private boolean checkPlayer(String username, ArrayList<NimPlayer> userlist, boolean found)
+	{
+		//Traverse the entire array
+		for (NimPlayer i : userlist)
+		{	
+			//Process if array is not null
+			if(i!=null && i.getUserName()!=null)
+			{
+				if(i.getUserName().equals(username))
+				{
+					found = true;
+					break;
+				}			
+			}	
+			
+		}
+		return found;		
+	}
+	
+	//Method to edit existing player
+	private void editPlayer(String username,String firstName, String lastName, ArrayList<NimPlayer> userList)
+	{
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, userList, found);
+		if(found == false)
+		{
+			System.out.println("The player does not exist.");
+		}
+		else 
+		{
+			//Traverse the entire array
+			for (NimPlayer i :  userList)
+			{		
+				//Process if array is not null
+				if(i!=null && i.getUserName()!=null)
+				{
+					if(i.getUserName().equals(username))
+					{
+						i.setFName(firstName);
+						i.setLName(lastName);
+						break; 
+					}
+				}	
+			}
+		}
+	}
+	
+	//Method to remove existing player
+	private void removePlayer(String username, ArrayList<NimPlayer> userList)
+	{
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, userList, found);
+		if(found == false)
+		{
+			System.out.println("The player does not exist.");
+		}
+		else 
+		{
+			//Traverse the entire array
+			for(NimPlayer i : userList)
+			{
+				//Only process if the array is not null
+				if(i!=null && i.getUserName()!=null)
+				{
+					if(i.getUserName().equals(username))
+					{
+						userList.remove(i);
+					}
+				}
+			}
+		}
+	}
+	
+	//Method to remove all existing player
+	private void removeAllPlayer(ArrayList<NimPlayer> userList)
+	{
+		//Traverse the entire array
+		userList.clear();
+	}
+	
+	//Method to display an existing player
+	private String displayPlayer(String username, ArrayList<NimPlayer> userList)
+	{	
+		String s = null;
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, userList, found);
+		if(found == false)
+		{
+			System.out.println("The player does not exist.");
+		}
+		else 
+		{
+			//Traverse the entire array
+			for (NimPlayer i : userList)
+			{
+				//Only process if array is not null 
+				if(i!=null && i.getUserName()!=null)
+				{
+					if(i.getUserName().equals(username))
+					{
+						s = i.getUserName()+","+i.getFName()+","+i.getLName()+","+i.getGamesPlayed()+" games,"+i.getGamesWon()+ " wins";
+						break;	
+					}
+				}
+			}
+		}
+		return s;
+	}
+	
+	//Method to display all existing player
+	private void displayAllPlayer(ArrayList<NimPlayer> userList)
+	{	
+		//Traverse the entire array
+		for (NimPlayer i : userList)
+		{
+			//Only process if array is not null
+			if(i!=null&&i.getUserName()!=null)
+			{
+				System.out.println(i.getUserName()+","+i.getFName()+","+i.getLName()+","
+							+ ""+i.getGamesPlayed()+" games,"+i.getGamesWon()+ " wins");
+			}
+		}
+		return;
+	}
+	
+	//Method to display rank
+	private void displayRank(ArrayList<NimPlayer> userList)
+	{	
+		String column="|";
+		String percentage;
+		
+		//Only show 10 players
+		if(userList.size() > 10)
+		{	
+			for(int i=0; i<=10; i++)
+			{
+				if(userList.get(i)!=null && userList.get(i).getUserName()!=null)
+				{
+					percentage  = String.format("%.0f",userList.get(i).calculatePercentage())+"%";
+				
+					System.out.printf("%-4s %s %02d games %s %s %s%n",percentage,column,userList.get(i).getGamesPlayed(), 
+					column, userList.get(i).getFName(), userList.get(i).getLName());
+				}
+			}
+		}
+		else
+		{
+			for(NimPlayer i : userList)
+			{
+				if(i!=null && i.getUserName()!=null)
+				{
+					percentage  = String.format("%.0f",i.calculatePercentage())+"%";
+				
+					System.out.printf("%-4s %s %02d games %s %s %s%n",percentage,column,i.getGamesPlayed(), 
+					column, i.getFName(), i.getLName());
+				}
+			}
+		}
+		return;
+	}
+	
+	//Method to reset all player stats
+	private void resetAll(ArrayList<NimPlayer> userList)
+	{
+		//Traverse the entire array
+		for (NimPlayer i : userList)
+		{
+			//Only process if array is not null 
+			if(i!=null)
+			{
+				i.setGamesPlayed(0);
+				i.setGamesWon(0);
+			}
+		}
+	}
+	
+	//Method to reset an existing player
+	private void resetPlayer(String username, ArrayList<NimPlayer> userList)
+	{
+		//Check existing player
+		boolean found= false; 
+		Nimsys obj = new Nimsys();
+		found = obj.checkPlayer(username, userList, found);
+		if(found == false)
+		{
+			System.out.println("The player does not exist.");
+		}
+		else 
+		{
+			//Traverse the entire array
+			for (NimPlayer i : userList)
+			{
+				//Only process if array is not null
+				if(i!=null && i.getUserName()!=null)
+				{
+					if(i.getUserName().equals(username))
+					{
+						i.setGamesWon(0);
+						i.setGamesPlayed(0);
+						break;
+					}
+				}
+			}
+		}
+	}
+	
+	//Method to set the player for a game
+	private NimPlayer setGamePlayer(String username, ArrayList<NimPlayer>userList)
+	{
+		NimPlayer player = null;
+		
+		//Traverse the entire array
+		for(NimPlayer i : userList)
+		{
+			//Only process if array is not null
+			if(i != null && i.getUserName()!=null)
+			{
+				if(i.getUserName().equals(username))
+				{
+					player = i;
+					break;
+				}
+			}
+		}
+		return player;
+	}
+	
+	
+	//method to compare the array in ascending format
+	private void CompareAsc(ArrayList<NimPlayer> userList)
+	{
+		Comparator<NimPlayer> WonCompareAsc = Comparator.comparing(NimPlayer::calculatePercentage)
+				.thenComparing(NimPlayer::getUserName);
+		Comparator<NimPlayer> nullLast = Comparator.nullsLast(WonCompareAsc);
+		
+		Collections.sort(userList,nullLast);
+		
+	}
+	
+	//method to compare the array in descending format
+	private void CompareDesc(ArrayList<NimPlayer> userList)
+	{
+		Comparator<NimPlayer> WonCompareDesc = Comparator.comparing(NimPlayer::calculatePercentage);
+		Comparator<NimPlayer> CompareDesc = WonCompareDesc.reversed().thenComparing(NimPlayer::getUserName);
+		Comparator<NimPlayer> ReadNull = Comparator.nullsLast(CompareDesc);
+		
+		Collections.sort(userList,ReadNull);
+	}
+	
+
+}
+
+
+		
+	
+	
+
+============================================
+src/Testable.java
+22:45:29_Saturday_23_May_2020
+============================================
+/*Testable.java
+ * 
+ * This class is provided for auto-testing purpose. Do NOT change it. */
+
+public interface Testable 
+{
+	public String advancedMove(boolean[] available, String lastMove);
+	
+
+
+}
+============================================
+src/InvalidMove.java
+22:45:26_Saturday_23_May_2020
+============================================
+
+/**
+ * An exception class for invalid move during a game
+ * 
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public class InvalidMove extends Exception 
+{
+	public InvalidMove(String InvalidMoveMessage)
+	{
+		super(InvalidMoveMessage);
+	}
+}
+============================================
+src/InvalidCommand.java
+22:45:26_Saturday_23_May_2020
+============================================
+
+/**
+ * An exception class for an invalid command passed to the system
+* @author  Clarisca Lawrencia
+* @idnumber 1152594
+* @username clawrencia
+*/
+
+public class InvalidCommand extends Exception
+{
+	public InvalidCommand(String InvalidCommandMessage)
+	{
+		super(InvalidCommandMessage);
+	}
+}
